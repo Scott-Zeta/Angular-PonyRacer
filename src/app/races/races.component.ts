@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Race } from '../models/race.model';
 
 @Component({
   selector: 'pr-races',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './races.component.css'
 })
 export class RacesComponent {
-
+  races: Race[] = [
+    { id: 1, name: 'Lyon' },
+    { id: 2, name: 'London' }
+  ];
 }
