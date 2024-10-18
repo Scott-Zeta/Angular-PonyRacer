@@ -1,4 +1,4 @@
 <figure>
-  <img [src]="'/public/images/pony-' + ponyModel.color + '.gif'" [alt]="ponyModel.name" />
+  <img [src]="getPonyImageUrl()" [alt]="ponyModel.name" />
   <figcaption>{{ ponyModel.name }}</figcaption>
 </figure>

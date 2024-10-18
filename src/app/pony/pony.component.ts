@@ -10,4 +10,8 @@ import { PonyModel } from '../models/pony.model';
 })
 export class PonyComponent {
   @Input({ required: true }) ponyModel!: PonyModel;
+
+  getPonyImageUrl(): string {
+    return `assets/images/pony-${this.ponyModel.color.toLowerCase()}.gif`;
+  }
 }
