@@ -1,12 +1,7 @@
-interface Pony {
+import { PonyModel } from './pony.model';
+export interface RaceModel {
   id: number;
   name: string;
-  color: string;
-}
-
-export interface Race {
-  id: number;
-  name: string;
-  ponies: Pony[];
+  ponies: PonyModel[];
   startInstant: string;
 }

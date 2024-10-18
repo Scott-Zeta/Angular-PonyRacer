@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Race } from '../models/race.model';
+import { RaceModel } from '../models/race.model';
 
 @Component({
   selector: 'pr-race',
@@ -9,5 +9,5 @@ import { Race } from '../models/race.model';
   styleUrl: './race.component.css'
 })
 export class RaceComponent {
-  @Input({ required: true }) raceModel!: Race;
+  @Input({ required: true }) raceModel!: RaceModel;
 }
