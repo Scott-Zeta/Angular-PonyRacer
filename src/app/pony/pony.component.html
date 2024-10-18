@@ -1,4 +1,4 @@
 <figure>
-  <img src="image.jpg" alt="missing" />
-  <figcaption>Caption goes here</figcaption>
+  <img [src]="'/public/images/pony-' + ponyModel.color + '.gif'" [alt]="ponyModel.name" />
+  <figcaption>{{ ponyModel.name }}</figcaption>
 </figure>
